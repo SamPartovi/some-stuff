@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="style.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+</head>
+<body>
+    <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="radio.html">Radio</a></li>
+        <li><a href="collection.html">Collection</a></li>
+        <li style="float:right"><a class="contact" href="contact.html">Contact</a></li>
+      </ul>
+    
+ <h2 style="font-family:poppins"><center>Welcome to My Online Radio</center></h2>
+<h3 style="font-family:poppins"><center>Click on a radio to start playing</center></h3>
+
+
+<center><div class="button"  onclick="playAudio('http://sezamfm.com:8000/stream')">Sezam FM</div></center>
+<br>
+<center><div class="button"  onclick="playAudio('https://myradio24.org/tamish')">Kand FM</div></center>
+<br>
+<center><div class="button"  onclick="playAudio('http://62.122.137.82:8020/ap')">Asia Plus</div></center>
+<br>
+<center><div class="button"  onclick="playAudio('http://navruzfm.uz:9000/navruz_low')">Navroz FM</div></center>
+<br>
+
+<br>
+<center><div class="button" id="stop" onclick="window.location.reload();">Stop</button></div></center>
+
+<script>
+function playAudio(url) {
+  var audio = new Audio(url);
+  audio.play();
+}
+</script>
+
+
+</body>
+</html>

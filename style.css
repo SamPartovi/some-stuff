@@ -1,0 +1,72 @@
+
+/*Button*/
+.button {
+    background: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255));
+    border-radius:50px;
+    box-shadow: 0px 4px 14px rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom:10px;
+    padding:15px;
+    align-items:center;
+    font-family:Poppins;
+    width:100px
+  }
+  
+      .button:hover {
+    background: linear-gradient(rgba(255, 255, 255, 0.995),  rgb(150, 188, 194));
+    transform: translateY(4px);
+    background-color: rgb(180, 170, 157);
+    
+  }
+  #stop {
+    padding:10px;
+    font-weight: bold;
+  }
+  /*Menu Bar*/
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:rgba(0, 0, 0, 0.768);
+    border-radius:15px;
+  }
+  
+  li {
+    float: left;
+    padding:1
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family:Poppins;
+  }
+  
+  li a:hover:not(.active) {
+    background-color: #111;
+  }
+  
+  .contact {
+    background-color: #658089;
+  }
+  /*Background*/
+  body {
+    background-image: linear-gradient(to bottom right, #d2e9f9, rgb(2, 52, 75));
+    z-index:0;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    
+  }
+  h2, h3 {
+    color:white;
+    text-shadow:2px 2px #0d0d0d99;
+    font-size:25px
+   
+  }

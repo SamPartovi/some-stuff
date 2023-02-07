@@ -26,17 +26,26 @@
 <br>
 <center><div class="button"  onclick="playAudio('http://navruzfm.uz:9000/navruz_low')">Navroz FM</div></center>
 <br>
-
+<center><div class="button"  onclick="playAudio('http://178.88.167.62:8080/AVTORADIO_192')">Avtoradio</div></center>
 <br>
-<center><div class="button" id="stop" onclick="window.location.reload();">Stop</button></div></center>
-
-<script>
-function playAudio(url) {
-  var audio = new Audio(url);
-  audio.play();
-}
-</script>
-
-
+</body>
+<body>
+<audio id="player">
+  <source src="http://178.88.167.62:8080/AVTORADIO_192" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+<br>
+<label for="volume">Volume:</label>
+<input style="color:red" type="range" id="volume" min="0" max="1" step="0.01" value="1">
+<br>
+<button id="play-pause">Play</button>
+<br>
+<label for="audio-streams">Choose a stream:</label>
+<select id="audio-streams">
+  <option value="http://178.88.167.62:8080/AVTORADIO_192">Music 1</option>
+  <option value="http://sezamfm.com:8000/stream">Music 2</option>
+  <option value="https://example.com/music3.mp3">Music 3</option>
+</select>
+<script src="music-player.js"></script>
 </body>
 </html>

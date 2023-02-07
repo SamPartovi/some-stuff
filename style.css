@@ -11,18 +11,15 @@
     padding:15px;
     align-items:center;
     font-family:Poppins;
-    width:100px
+    width:100px;
+    transition: all 0.3s ease-in-out;
   }
   
       .button:hover {
     background: linear-gradient(rgba(255, 255, 255, 0.995),  rgb(150, 188, 194));
-    transform: translateY(4px);
+    transform: translateY(3px);
     background-color: rgb(180, 170, 157);
     
-  }
-  #stop {
-    padding:10px;
-    font-weight: bold;
   }
   /*Menu Bar*/
   ul {
@@ -70,3 +67,4 @@
     font-size:25px
    
   }
+  /*play/pause*/

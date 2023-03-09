@@ -17,35 +17,18 @@
  <h2 style="font-family:poppins"><center>Welcome to My Online Radio</center></h2>
 <h3 style="font-family:poppins"><center>Click on a radio to start playing</center></h3>
 
+<div for="audio-streams">
 
-<center><div class="button"  onclick="playAudio('http://sezamfm.com:8000/stream')">Sezam FM</div></center>
+<center><a href><div class="button">Sezam FM</div></a></center>
 <br>
-<center><div class="button"  onclick="playAudio('https://myradio24.org/tamish')">Kand FM</div></center>
+<center><a href><div class="button">Kand FM</div></a></center>
 <br>
-<center><div class="button"  onclick="playAudio('http://62.122.137.82:8020/ap')">Asia Plus</div></center>
+<center><a href><div class="button">Asia Plus</div></a></center>
 <br>
-<center><div class="button"  onclick="playAudio('http://navruzfm.uz:9000/navruz_low')">Navroz FM</div></center>
+<center><a href><div class="button">Navroz FM</div></a></center>
 <br>
-<center><div class="button"  onclick="playAudio('http://178.88.167.62:8080/AVTORADIO_192')">Avtoradio</div></center>
+<center><a href><div class="button">Avtoradio</div></a></center>
 <br>
-</body>
-<body>
-<audio id="player">
-  <source src="http://178.88.167.62:8080/AVTORADIO_192" type="audio/mpeg">
-  Your browser does not support the audio element.
-</audio>
-<br>
-<label for="volume">Volume:</label>
-<input style="color:red" type="range" id="volume" min="0" max="1" step="0.01" value="1">
-<br>
-<button id="play-pause">Play</button>
-<br>
-<label for="audio-streams">Choose a stream:</label>
-<select id="audio-streams">
-  <option value="http://178.88.167.62:8080/AVTORADIO_192">Music 1</option>
-  <option value="http://sezamfm.com:8000/stream">Music 2</option>
-  <option value="https://example.com/music3.mp3">Music 3</option>
-</select>
-<script src="music-player.js"></script>
+</div>
 </body>
 </html>
